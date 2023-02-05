@@ -16,10 +16,11 @@ const render = (status) => {
 
 const GoogleMap = () => {
   const center = {
-    lat: 10.99835602,
-    lng: 77.01502627
+    // Austin coordinates
+    lat: 30.293380764541915,
+    lng: -97.75533171171739
   }
-  const zoom = 11
+  const zoom = 11.75
   const ref = useRef();
 
   useEffect(() => {
@@ -32,10 +33,10 @@ const GoogleMap = () => {
   return <div ref={ref} id="map" style={{ height: '100%'}} />;
 }
 
-export default function Map({ points, zoomLevel }) {
+export default function Map({ apiKey, points, zoomLevel }) {
   return (
     <div className="google-map" style={{ height: '100%', width: '100%' }}>
-      <Wrapper apiKey={process.env.REACT_APP_MAP_API_KEY} render={render}>
+      <Wrapper apiKey={apiKey} render={render}>
         <GoogleMap />
       </Wrapper>
     </div>
