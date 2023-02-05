@@ -36,3 +36,11 @@
     transform: rotate(360deg);
   }
 }
+
+.labels {
+  opacity: 1.0;
+  background-color: '#fff';
+  height: 20px;
+  font-size: 20px;
+  font-weight: 'bold';
+}
