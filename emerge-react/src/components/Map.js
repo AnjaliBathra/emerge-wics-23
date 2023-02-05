@@ -1,6 +1,7 @@
 import { useEffect, useRef } from "react";
 import { Wrapper, Status } from "@googlemaps/react-wrapper";
 
+// handle error cases until Google Maps JS API load is complete
 const render = (status) => {
   switch (status) {
     case Status.LOADING:
@@ -14,6 +15,7 @@ const render = (status) => {
   }
 };
 
+// initialize Google Map
 const GoogleMap = () => {
   const center = {
     // Austin coordinates

@@ -1,5 +1,5 @@
 // import { useState, useEffect } from 'react';
-import Map from './Map.js';
+import Map from './components/Map.js';
 import './App.css';
 // import axios from 'axios';
 
